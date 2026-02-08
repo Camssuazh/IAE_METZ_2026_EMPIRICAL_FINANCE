@@ -75,18 +75,18 @@ L’analyse est structurée en plusieurs étapes successives :
 
 PROJET_GARP
 - data
- - raw
- - processed
+ -- raw
+ -- processed
 - scripts
- - 01_data_preparation.py
- - 02_descriptive_performance.py
- - 03_style_analysis.py
- - 04_factor_decomposition.py
- - 05_persistence_analysis.py
- - 06_robustness_checks.py
+ -- 01_data_preparation.py
+ -- 02_descriptive_performance.py
+ -- 03_style_analysis.py
+ -- 04_factor_decomposition.py
+ -- 05_persistence_analysis.py
+ -- 06_robustness_checks.py
 - results
- - tables
- - figures
+ -- tables
+ -- figures
 - notebooks
 - README.md
 - requirements.txt
