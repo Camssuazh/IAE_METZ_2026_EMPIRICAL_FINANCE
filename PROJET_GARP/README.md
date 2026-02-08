@@ -72,7 +72,7 @@ L’analyse est structurée en plusieurs étapes successives :
 ---
 
 ## Structure du projet
-
+```text
 PROJET_GARP/
 │
 ├── data/
@@ -95,7 +95,7 @@ PROJET_GARP/
 │
 ├── README.md               # Présentation académique du projet
 └── requirements.txt        # Librairies Python
-
+```
 
 ---
 
