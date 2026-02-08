@@ -14,7 +14,7 @@ L’objectif est de mettre en œuvre, à l’aide de Python, une analyse rigoure
 
 ## Problématique
 
-> **La stratégie GARP génère-t-elle une surperformance durable et significative en rendement ajusté du risque par rapport aux benchmarks actions mondiaux, et cette performance est-elle expliquée par des expositions factorielles connues ou par un alpha résiduel propre ?**
+> **La stratégie GARP du portefeuille génère-t-elle une surperformance durable et significative en rendement ajusté du risque par rapport aux benchmarks actions mondiaux, et cette performance est-elle expliquée par des expositions factorielles connues ou par un alpha résiduel propre ?**
 
 Cette problématique s’inscrit au cœur du débat entre **gestion active et gestion passive**, ainsi que dans la littérature sur les **facteurs de performance** et la persistance de l’alpha.
 
@@ -22,10 +22,10 @@ Cette problématique s’inscrit au cœur du débat entre **gestion active et ge
 
 ## Hypothèses de recherche
 
-- **H1** — La stratégie GARP surperforme le benchmark mondial en termes de rendement ajusté du risque.  
-- **H2** — L’alpha de la stratégie GARP est partiellement expliqué par des expositions factorielles systématiques.  
-- **H3** — Une fraction résiduelle de l’alpha demeure statistiquement significative après contrôle des facteurs.  
-- **H4** — Le couple rendement–risque de la stratégie GARP est persistant dans le temps.
+- **H1** — Le portefeuille GARP surperforme le benchmark mondial en termes de rendement ajusté du risque. 
+- **H2** — L’alpha du portefeuille GARP est partiellement expliqué par des expositions factorielles.  
+- **H3** — Une fraction résiduelle de l’alpha demeure statistiquement significative.  
+- **H4** — Le couple rendement–risque du portefeuille GARP est persistant dans le temps.
 
 ---
 
@@ -34,16 +34,16 @@ Cette problématique s’inscrit au cœur du débat entre **gestion active et ge
 Les performances de la stratégie GARP sont évaluées relativement aux indices suivants :
 
 - **MSCI World**  
-  Benchmark principal représentant le portefeuille actions mondial passif de référence pour un investisseur international.
+  Le MSCI World est utilisé comme benchmark principal car il représente le portefeuille actions mondial passif de référence pour un investisseur international. Il permet d’évaluer la surperformance globale du portefeuille GARP et de mesurer la valeur ajoutée de la gestion active en termes de rendement ajusté du risque.
 
 - **MSCI World Growth**  
-  Utilisé afin d’identifier si la performance du portefeuille GARP reflète une exposition à un style growth classique.
+  Le MSCI World Growth est retenu afin de déterminer si la performance du portefeuille GARP s’explique principalement par une exposition croissance classique ou par une approche GARP distincte. Il permet de comparer les profils de performance et de risque à un style growth pur.
 
 - **MSCI World Value**  
-  Permet de positionner la stratégie GARP par rapport au style value et d’analyser son comportement au cours des cycles de marché.
+  Le MSCI World Value est utilisé pour situer le portefeuille GARP par rapport au style value et analyser son comportement relatif au cours des différents cycles de marché. Il permet de positionner la stratégie GARP à l’intersection des styles growth et value.
 
 - **FTSE All-World**  
-  Benchmark alternatif intégré afin de tester la robustesse des résultats face à une méthodologie de construction d’indice différente.
+  Le FTSE All-World est intégré comme benchmark alternatif afin de tester la robustesse des résultats face à une méthodologie de construction d’indice différente de celle de MSCI. Il permet de vérifier que les conclusions ne dépendent pas d’un fournisseur d’indice spécifique.
 
 ---
 
@@ -76,7 +76,7 @@ L’analyse est structurée en plusieurs étapes successives :
 PROJET_GARP/
 │
 ├── data/
-│   ├── raw/                # Données brutes (indices, facteurs)
+│   ├── raw/                # Données brutes
 │   ├── processed/          # Données nettoyées et alignées
 │
 ├── scripts/
@@ -91,7 +91,7 @@ PROJET_GARP/
 │   ├── tables/
 │   ├── figures/
 │
-├── notebooks/              # (optionnel) exploratoire / debug
+├── notebooks/              
 │
 ├── README.md               # Présentation académique du projet
 └── requirements.txt        # Librairies Python
