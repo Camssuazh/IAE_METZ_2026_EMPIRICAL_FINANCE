@@ -1,6 +1,13 @@
-pandas
-numpy
-matplotlib
-scipy
-statsmodels
-yfinance
+# Core data analysis
+numpy>=1.24
+pandas>=2.0
+
+# Data retrieval
+yfinance>=0.2
+
+# Statistical analysis
+scipy>=1.10
+statsmodels>=0.14
+
+# Visualization
+matplotlib>=3.7
