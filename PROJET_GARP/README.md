@@ -80,12 +80,8 @@ PROJET_GARP/
 │   ├── processed/          # Données nettoyées et alignées
 │
 ├── scripts/
-│   ├── 01_data_preparation.py
-│   ├── 02_descriptive_performance.py
-│   ├── 03_style_analysis.py
-│   ├── 04_factor_decomposition.py
-│   ├── 05_persistence_analysis.py
-│   ├── 06_robustness_checks.py
+│   ├── scripts.ipynb
+│   
 │
 ├── results/
 │   ├── tables/
